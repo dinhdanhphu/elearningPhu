@@ -63,6 +63,10 @@ module Japanese
     config.assets.initialize_on_precompile = false
 
     # Replace Eco JST template with Handlebars
-    HandlebarsAssets::Config.template_namespace = 'JST'
+    if "assets" == ENV["RAILS_GROUPS"] || ["development", "test"].include?(ENV["RAILS_ENV"])
+      HandlebarsAssets::Config.options = { data: true }
+      HandlebarsAssets::Config.template_namespace = 'JST'
+    end
+    
   end
 end
