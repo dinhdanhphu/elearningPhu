@@ -5,14 +5,15 @@
       <%= link_to "Elearning Website", root_path, class: "brand" %>
       <nav>
         <ul class="nav pull-right">
+          <li><%= link_to "About", "" %></li>
+          <li><%= link_to "Contact", "" %></li>
           <% if user_signed_in? %>
-            <li><%= link_to "Dashboard", "" %></li>
-            <li><%= link_to "Lessons", "" %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Account <b class="caret"></b>
+                Account<b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
+                <li><%= link_to "Dashboard", dashboard_path %></li>
                 <li><%= link_to "Profile", "" %></li>
                 <li><%= link_to "Settings", "" %></li>
                 <li class="divider"></li>
@@ -22,11 +23,7 @@
               </ul>
             </li>
           <% else %>
-            <%= form_tag(user_session_path, class: "navbar-form pull-right") do %>
-              <%= text_field_tag :email, nil, placeholder: "email", class: "span2" %>
-              <%= password_field_tag :password, nil,  placeholder: "password", class: "span2" %>
-              <%= submit_tag "Log In", class: "btn" %>
-            <% end %>
+            <li><%= link_to "Login", new_user_session_path %></li>
           <% end %>
         </ul>
       </nav>

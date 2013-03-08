@@ -11,6 +11,7 @@ gem 'devise'
 gem 'cancan'
 gem 'sass-rails',   '3.2.5'
 gem 'backbone-on-rails'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

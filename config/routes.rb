@@ -1,8 +1,11 @@
 Japanese::Application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   devise_for :users
 
-  root :to => 'main#index'
+  match "/dashboard",  to: 'main#dashboard', as: 'dashboard'
+  root :to => 'main#index', as: 'index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
