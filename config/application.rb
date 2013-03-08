@@ -58,5 +58,11 @@ module Japanese
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Config for deploying to Heroku
+    config.assets.initialize_on_precompile = false
+
+    # Replace Eco JST template with Handlebars
+    HandlebarsAssets::Config.template_namespace = 'JST'
   end
 end
