@@ -45,7 +45,9 @@
 * rails server
 
 == Heroku Link
-http://japanese-elearning-site.herokuapp.com/
+* http://japanese-elearning-site.herokuapp.com/
+* Command to add to existing heroku: git remote add heroku git@heroku.com:japanese-elearning-site.git 
+
 
 == Ways of working
 * Follow naming convention
