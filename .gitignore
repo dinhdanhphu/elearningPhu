@@ -9,6 +9,8 @@
 /tmp
 
 # Ignore other unneeded files.
+id_rsa
+id_rsa.pub
 doc/
 *.swp
 *~

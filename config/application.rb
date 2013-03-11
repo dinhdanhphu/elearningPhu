@@ -61,6 +61,8 @@ module Japanese
 
     # Config for deploying to Heroku
     config.assets.initialize_on_precompile = false
+    # Add Rails Admin assets (required)
+    config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
     # Replace Eco JST template with Handlebars
     if "assets" == ENV["RAILS_GROUPS"] || ["development", "test"].include?(ENV["RAILS_ENV"])
