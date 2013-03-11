@@ -2,30 +2,30 @@
 
 1. Model Naming Convention
 
-Table: orders
-Class: Order
-File: /app/models/order.rb
-Primary Key: id
-Foreign Key: customer_id
-Link Tables: items_orders
+* Table: orders
+* Class: Order
+* File: /app/models/order.rb
+* Primary Key: id
+* Foreign Key: customer_id
+* Link Tables: items_orders
 
 2. Controller Naming Convention
 
-Class: OrdersController
-File: /app/controllers/orders_controller.rb
-Layout: /app/layouts/orders.html.erb
+* Class: OrdersController
+* File: /app/controllers/orders_controller.rb
+* Layout: /app/layouts/orders.html.erb
 
 3. View Naming Convention
 
-Helper: /app/helpers/orders_helper.rb
-Helper Module: OrdersHelper
-Views: /app/views/orders/… (list.html.erb for example)
+* Helper: /app/helpers/orders_helper.rb
+* Helper Module: OrdersHelper
+* Views: /app/views/orders/… (list.html.erb for example)
 
 4. Tests Naming Convention
 
-Unit: /test/unit/order_test.rb
-Functional: /test/functional/orders_controller_test.rb
-Fixtures: /test/fixtures/orders.yml
+* Unit: /test/unit/order_test.rb
+* Functional: /test/functional/orders_controller_test.rb
+* Fixtures: /test/fixtures/orders.yml
 
 == Rails App
 
@@ -53,6 +53,9 @@ http://japanese-elearning-site.herokuapp.com/
 * Write BDD Test with Capybara
 * Testing localhost before push to github
 * After that, testing and running code in Heroku
+
+== Mockup Tool for GUI
+* Balsamiq Mockup
 
 == Ways of management
 * http://basecamp.com/

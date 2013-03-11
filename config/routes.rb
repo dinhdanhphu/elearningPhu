@@ -5,7 +5,7 @@ Japanese::Application.routes.draw do
   devise_for :users
 
   match "/dashboard",  to: 'main#dashboard', as: 'dashboard'
-  root :to => 'main#index', as: 'index'
+  root :to => 'main#index', as: 'index', as: 'root'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
